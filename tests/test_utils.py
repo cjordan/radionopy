@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from radiono import utils as ut
 import unittest, os, shutil
 
