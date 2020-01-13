@@ -38,8 +38,8 @@ class TestIonoMap(unittest.TestCase):
         self.assertEqual(self.rm_map.lat.value, -30.721527777777776)
         self.assertEqual(self.rm_map.lon.value, 21.428305555555557)
         self.assertEqual(self.rm_map.height, testHeight)
-        self.assertEqual(np.around(self.rm_map.location.latitude.value,5), np.around(-30.721527777777776,5))
-        self.assertEqual(np.around(self.rm_map.location.longitude.value,5), np.around(21.428305555555557,5))
+        self.assertEqual(np.around(self.rm_map.location.lat.value,5), np.around(-30.721527777777776,5))
+        self.assertEqual(np.around(self.rm_map.location.lon.value,5), np.around(21.428305555555557,5))
         self.assertEqual(np.around(self.rm_map.location.height.value,5), np.around(testHeight,5))
 
         self.assertEqual(self.rm_map.rm_dir, testRmDir)
