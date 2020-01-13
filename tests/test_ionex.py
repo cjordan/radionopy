@@ -34,9 +34,6 @@ class TestIonex(unittest.TestCase):
 		ionex_path = inx.pull_IONEX_file(self.year, self.month, self.day, self.ionex_dir)
 		self.assertEqual(ionex_path, self.ionex_path, msg='IONEX file downloaded incorrect')
 
-		ionex_path_z = inx.pull_IONEX_file(self.year, self.month, self.day, self.ionex_path, self.ionex_dir)
-		self.assertEqual(ionex_path_z, self.ionex_path, msg='IONEX file downloaded incorrect')
-
 	def test_gen_IONEX_list(self):
 		pass
 
