@@ -13,5 +13,3 @@ rad_dir = os.path.dirname(__file__)
 root_dir = os.path.abspath(os.path.join(rad_dir, '..'))
 rm_dir = os.path.join(root_dir, 'RM_files')
 ionex_dir = os.path.join(root_dir, 'TEC')
-
-import utils, ionex_file, interp, physics, rm #<-- I would like this to be the only line of code...

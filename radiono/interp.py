@@ -15,7 +15,7 @@ from __future__ import print_function
 import numpy as np
 import healpy as hp
 import radiono as rad
-import utils
+from radiono import utils
 
 TECU = 1e16
 TEC2m2 = 0.1 * TECU
