@@ -14,7 +14,7 @@ Installation:
 
 This compiles the [geomagnetic field code](https://www.ngdc.noaa.gov/geomag/WMM/soft.shtml) (within the IGRF folder) 
 on the user machine:
-`gcc geomag70.c -o geomag70 -lm`
+`gcc -O2 geomag70.c -o geomag70 -lm`
 
 
 Example Scripts:

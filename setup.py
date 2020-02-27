@@ -30,12 +30,11 @@ if __name__ == '__main__':
         setup(**setup_args)
 
     #Compiles geomag C script
-    script_program = 'gcc'
-    script_data = os.path.join(igrf_dir, 'geomag70.c')
-    script_name = os.path.join(igrf_dir, 'geomag70')
-    script_option = '-o'
-    script_fix = '-lm'
-    subprocess.call([script_program, script_data, script_option, script_name, script_fix])
+    compiler = "gcc"
+    source = os.path.join(igrf_dir, "geomag70.c")
+    exe_name = os.path.join(igrf_dir, "geomag70")
+    link_args = "-lm"
+    subprocess.call([compiler, "-O2", source, "-o", exe_name, link_args])
 
     open(igrf_dir + '/input.txt', 'a').close()
     open(igrf_dir + '/output.txt', 'a').close()

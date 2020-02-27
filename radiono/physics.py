@@ -230,5 +230,8 @@ def ipp(lat_str, lon_str, az_src, zen_src, ion_height):
     coord_lat, coord_lon = get_coords(lat_str, lon_str,
                                       lat_obs, lon_obs,
                                       np.degrees(off_lat), np.degrees(off_lon))
+    # Ensure that longitudes are between -180 and 180.
+    coord_lon[coord_lon < -180] += 360
+    coord_lon[coord_lon > 180] -= 360
 
     return coord_lat, coord_lon, az_punct, zen_punct
