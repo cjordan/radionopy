@@ -10,7 +10,7 @@ setup_args = {
     'author': authors,
     'description': 'package for ionosphere RM',
     'url': 'https://github.com/jaguirre/radionopy.git',
-    'license': 'GPL',
+    'license': 'MIT',
     'package_dir' : {'radionopy': ''},
     'packages' : find_packages(),
     'version': __version__,
